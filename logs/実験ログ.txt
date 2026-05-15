@@ -1,0 +1,11 @@
+(.venv) PS E:\fork> Get-PnpDevice | Where-Object { $_.FriendlyName -match 'Sony|DSC|Camera|MTP|PTP' } |
+>>   Format-Table -AutoSize Status, Class, FriendlyName, InstanceId
+
+Status  Class     FriendlyName              InstanceId
+------  -----     ------------              ----------
+Unknown WPD       Sony Digital Still Camera USB\VID_054C&PID_02F8\D334D000A205
+Unknown DiskDrive Sony DSC USB Device       USBSTOR\DISK&VEN_SONY&PROD_DSC&REV_1.00\C9DB303093A7&0
+Unknown DiskDrive Sony DSC USB Device       USBSTOR\DISK&VEN_SONY&PROD_DSC&REV_1.00\C9DB303093A7&1
+OK      Net       WAN Miniport (PPTP)       SWD\MSRRAS\MS_PPTPMINIPORT
+Unknown WPD       MTP USB デバイス          USB\VID_054C&PID_07C3\C9DB303093A7
+OK      DiskDrive Sony DSC USB Device       USBSTOR\DISK&VEN_SONY&PROD_DSC&REV_1.00\D334D000A205&0
